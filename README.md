@@ -21,7 +21,6 @@ Once you have a virtualenv set up, run these commands to install
 $ git clone https://github.com/yebra06/pixelmap.git
 $ cd pixelmap
 $ pip install -r requirements.txt . # Install all dependencies
-$ pip freeze > requirements.txt     # Save requirements to requirements.txt
 ```
 
 ### Usage
