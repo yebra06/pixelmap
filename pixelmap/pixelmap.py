@@ -4,8 +4,6 @@ Cool pixelmap of Pixels.
 Last updated: March 11, 2017
 """
 
-from .pixel import Pixel
-
 
 class Pixelmap:
 
@@ -23,7 +21,7 @@ class Pixelmap:
         self.pixel_matrix = [[0] * self.cols for _ in range(self.rows)]
         for row in range(self.rows):
             for col in range(self.cols):
-                self.pixel_matrix[row][col] = Pixel(default_val)
+                self.pixel_matrix[row][col] = default_val
 
     def num_cols(self):
         """Matrix column count
