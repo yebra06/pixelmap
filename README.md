@@ -30,17 +30,20 @@ $ python
 ```
 ```python
 >>> from pixelmap import pixelmap
->>>
->>> def create_pixelmap():
-...     pmap = pixelmap.Pixelmap(5,5)
-...     print pmap
-...
->>> create_pixelmap()
-1   2   3   4   5
-6   7   8   9   10
-11  12  13  14  15
-16  17  18  19  20
-21  22  23  24  25
+>>> pmap = pixelmap.Pixelmap(4, 4)
+>>> print(pmap)
+None  None  None  None  
+None  None  None  None  
+None  None  None  None  
+None  None  None  None  
+>>> pmap[3, 3] = {'dat': 3}
+>>> print(pmap)
+None  None  None  None  
+None  None  None  None  
+None  None  None  None  
+None  None  None  {'dat': 3}
+>>> print(pmap.num_rows())
+4
 ```
 
 ## Testing
